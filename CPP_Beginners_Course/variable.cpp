@@ -11,4 +11,8 @@ int main()
     cout<< "    Number of cats: " << number_cats<< endl;
 
     cout << "The total number of animals is: " << number_dogs + number_cats << endl;
+
+    number_dogs = number_dogs + 1;
+
+    cout << "New number of dogs: " << number_dogs;
 }
