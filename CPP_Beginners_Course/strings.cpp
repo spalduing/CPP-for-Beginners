@@ -11,4 +11,6 @@ int main()
 
     cout << text << text2 << endl;
     cout << text3 << endl;
+
+    return 0;
 }

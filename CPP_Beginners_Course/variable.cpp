@@ -15,4 +15,6 @@ int main()
     number_dogs = number_dogs + 1;
 
     cout << "New number of dogs: " << number_dogs;
+
+    return 0;
 }

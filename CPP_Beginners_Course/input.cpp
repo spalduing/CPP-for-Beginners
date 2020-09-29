@@ -10,4 +10,6 @@ int main()
     cin >> name;
 
     cout << "Hello there " << name << "!" <<endl;
+
+    return 0;
 }
