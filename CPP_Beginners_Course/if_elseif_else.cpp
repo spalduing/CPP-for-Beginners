@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    /*
+
     cout << "1.\tAdd new record." << endl;
     cout << "2.\tDelete record." << endl;
     cout << "3.\tView record." << endl;
@@ -27,8 +27,9 @@ int main(){
     }else{
         cout << "Quiting..." << endl;
     }
-    */
 
+
+    /*
     float fvalue = 4.6;
 
     // As you can see the fvalue does not store the exact 4.6 number but instead an approximation of it.
@@ -38,5 +39,6 @@ int main(){
     }else{
         cout << "NOT equal" << endl;
     }
+    */
     return 0;
 }
