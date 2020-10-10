@@ -34,5 +34,17 @@ int main()
         cout <<"Element at index " << i << ": " << zeros[i] << endl;
     }
 
+
+    cout << endl << "Array of Strings" << endl;
+    cout << "=================" << endl;
+    // Array of strings
+    // You don't necessary have to set a size for the array
+    // if you initialize it.
+    string texts[] = {"apple", "banana", "orange"};
+
+    for(int i=0; i<3; i++){
+        cout <<"Element at index " << i << ": " << texts[i] << endl;
+    }
+
     return 0;
 }
