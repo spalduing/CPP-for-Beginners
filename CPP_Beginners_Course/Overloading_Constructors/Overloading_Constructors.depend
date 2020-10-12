@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1602543096 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\overloading_constructors\main.cpp
+	<iostream>
+	"Person.h"
+
+1602542707 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\overloading_constructors\src\person.cpp
+	<iostream>
+	<sstream>
+	"Person.h"
+
+1602543256 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\overloading_constructors\include\person.h
+
