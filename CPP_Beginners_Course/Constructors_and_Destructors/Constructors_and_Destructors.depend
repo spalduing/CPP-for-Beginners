@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1602531626 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructors_and_destructors\main.cpp
+	<iostream>
+	"Cat.h"
+
+1602532544 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructors_and_destructors\include\cat.h
+
+1602532586 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructors_and_destructors\src\cat.cpp
+	<iostream>
+	"Cat.h"
+
