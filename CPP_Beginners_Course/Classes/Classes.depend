@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1602525719 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\classes\main.cpp
+	<iostream>
+	"Cat.h"
+
+1602525674 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\classes\cat.h
+
+1602525888 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\classes\cat.cpp
+	<iostream>
+	"Cat.h"
+
