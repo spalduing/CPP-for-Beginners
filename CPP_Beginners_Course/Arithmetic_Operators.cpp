@@ -12,6 +12,10 @@ using namespace std;
 * %=
 * precedence
 */
+
+// Take a large numbers of seccoends and convert it to hours and minutes.
+// Write a for loop that iterates 10,000 times; output a dot (on the same line) every 100 iterations (use the mod operator).
+// Write a for loop that iterates 10,000 times; output a dot (on the same line) every 100 iterations (use the mod operator).
 int main()
 {
     //casting the 7 number into a double to
