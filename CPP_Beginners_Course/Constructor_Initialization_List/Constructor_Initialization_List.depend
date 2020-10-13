@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1602605720 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructor_initialization_list\main.cpp
+	<iostream>
+	"Character.h"
+
+1602605687 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructor_initialization_list\src\character.cpp
+	<iostream>
+	<sstream>
+	"Character.h"
+
+1602605619 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\constructor_initialization_list\include\character.h
+
