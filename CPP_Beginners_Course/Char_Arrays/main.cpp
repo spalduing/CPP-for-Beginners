@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-
     char text[] = "hello";
     int s = sizeof(text);
     cout<< text << endl;
@@ -16,7 +15,6 @@ int main()
         }
         cout<<i << ":"<< text[i]<<endl;
     }
-
 
     cout<<endl<<endl;
 
