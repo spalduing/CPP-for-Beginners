@@ -2,7 +2,7 @@
 #include <sstream>
 #include "Character.h"
 using namespace std;
-Character::Character(): name("Lupus Regina Beta"), clas("Priest"), age(57)
+Character::Character(): name("Lupusregina Beta"), clas("Priest"), age(57)
 {
 
 }
