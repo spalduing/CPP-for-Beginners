@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1602787534 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\namespaces\main.cpp
+	<iostream>
+	"Cat.h"
+	"Animals.h"
+
+1602787767 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\namespaces\src\cat.cpp
+	"Cat.h"
+
+1602787890 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\namespaces\include\cat.h
+	<iostream>
+
+1602787767 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\namespaces\src\animals.cpp
+	"Animals.h"
+
+1602787921 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\namespaces\include\animals.h
+	<iostream>
+
