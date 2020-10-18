@@ -53,10 +53,6 @@ bool Screen::init()
 
     memset(m_buffer, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
 
-    for(int i=0; i<SCREEN_WIDTH*SCREEN_HIGH; i++)
-    {
-        m_buffer[i] = 0;
-    }
 
 
     return true;
