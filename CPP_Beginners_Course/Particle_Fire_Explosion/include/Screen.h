@@ -23,6 +23,7 @@ public:
     Screen();
     ~Screen();
     bool init();
+    void update();
     bool processEvent(bool quit, SDL_Event &event);
     void close();
 

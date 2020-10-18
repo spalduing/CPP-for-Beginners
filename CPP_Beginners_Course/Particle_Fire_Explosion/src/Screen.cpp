@@ -58,12 +58,16 @@ bool Screen::init()
         m_buffer[i] = 0xFFFF0000;
     }
 
+
+    return true;
+}
+
+void Screen::update()
+{
     SDL_UpdateTexture(m_texture, NULL, m_buffer, SCREEN_WIDTH*sizeof(Uint32));
     SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
     SDL_RenderPresent(m_renderer);
-
-    return true;
 }
 
 bool Screen::processEvent(bool quit, SDL_Event &event)

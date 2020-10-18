@@ -16,6 +16,7 @@ int main(int argc, char *argv[] )
     while(!quit)
     {
         // Update particles
+        screen.update();
         // Draw particles
         // Check for messages/events
         quit=screen.processEvent(false, event);
