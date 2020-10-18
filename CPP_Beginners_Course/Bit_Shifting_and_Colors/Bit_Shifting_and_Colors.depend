@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603058422 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\bit_shifting_and_colors\main.cpp
+	<iostream>
+	<iomanip>
+
