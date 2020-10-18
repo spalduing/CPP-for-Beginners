@@ -26,7 +26,7 @@ int main(int argc, char *argv[] )
 
     SDL_Renderer * renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
     SDL_Texture *texture = SDL_CreateTexture(renderer,
-                                             SDL_PIXELFORMAT_ABGR8888,
+                                             SDL_PIXELFORMAT_RGBA8888,
                                              SDL_TEXTUREACCESS_STATIC,
                                              SCREEN_WIDTH,
                                              SCREEN_HIGH);
@@ -47,7 +47,12 @@ int main(int argc, char *argv[] )
 
     Uint32 *buffer = new Uint32[SCREEN_WIDTH*SCREEN_HIGH];
 
-    memset(buffer, 0xFF, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
+    memset(buffer, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
+
+    for(int i=0; i<SCREEN_WIDTH*SCREEN_HIGH; i++)
+    {
+        buffer[i] = 0xFFFF0000;
+    }
 
     SDL_UpdateTexture(texture, NULL, buffer, SCREEN_WIDTH*sizeof(Uint32));
     SDL_RenderClear(renderer);
