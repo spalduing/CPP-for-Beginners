@@ -18,13 +18,8 @@ int main(int argc, char *argv[] )
         // Update particles
         // Draw particles
         // Check for messages/events
-        while(SDL_PollEvent(&event))
-        {
-            if(event.type == SDL_QUIT)
-            {
-                quit = true;
-            }
-        }
+        quit=screen.processEvent(false, event);
+
     }
 
     screen.close();
