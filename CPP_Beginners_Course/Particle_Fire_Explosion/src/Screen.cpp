@@ -55,7 +55,7 @@ bool Screen::init()
 
     for(int i=0; i<SCREEN_WIDTH*SCREEN_HIGH; i++)
     {
-        m_buffer[i] = 0xFFFF0000;
+        m_buffer[i] = 0;
     }
 
 
@@ -68,6 +68,20 @@ void Screen::update()
     SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
     SDL_RenderPresent(m_renderer);
+}
+
+void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue)
+{
+    Uint32 color = 0;
+    color += red;
+    color <<= 8;
+    color += green;
+    color <<= 8;
+    color += blue;
+    color <<= 8;
+    color += 0xFF;
+
+    m_buffer[(y * SCREEN_WIDTH) + x] = color;
 }
 
 bool Screen::processEvent(bool quit, SDL_Event &event)

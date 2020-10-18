@@ -16,8 +16,14 @@ int main(int argc, char *argv[] )
     while(!quit)
     {
         // Update particles
-        screen.update();
+
         // Draw particles
+
+        screen.setPixel(400, 300, 255, 255, 255);
+
+        // Draw the screen
+        screen.update();
+
         // Check for messages/events
         quit=screen.processEvent(false, event);
 
