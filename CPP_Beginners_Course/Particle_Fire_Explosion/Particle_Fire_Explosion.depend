@@ -373,10 +373,11 @@
 	"Particle.h"
 	<stdlib.h>
 
-1603115081 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
+1603115936 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
 	<iostream>
 	<SDL2/SDL.h>
-	"Screen.h"
+	<stdlib.h>
+	<math.h>
 
 1603113140 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\swarm.cpp
 	"Swarm.h"
