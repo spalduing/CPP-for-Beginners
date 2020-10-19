@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1603113156 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\main.cpp
+1603113687 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\main.cpp
 	<iostream>
 	<math.h>
 	"screen.h"
@@ -8,7 +8,7 @@
 	<stdlib.h>
 	<time.h>
 
-1603059560 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\screen.h
+1603113571 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\screen.h
 	<iostream>
 	<SDL2/SDL.h>
 
@@ -366,10 +366,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1603069264 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\screen.cpp
+1603113687 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\screen.cpp
 	"Screen.h"
 
-1603113140 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\particle.cpp
+1603113980 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\particle.cpp
 	"Particle.h"
 	<stdlib.h>
 

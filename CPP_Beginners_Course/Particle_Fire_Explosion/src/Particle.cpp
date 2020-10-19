@@ -17,10 +17,11 @@ Particle::~Particle()
 
 void Particle::update()
 {
-    const double speed = 0.01;
+    const double x_speed = ( 0.01 * rand()/RAND_MAX );
+    const double y_speed = ( 0.01 * rand()/RAND_MAX );
 
-    m_x += speed;
-    m_y += speed;
+    m_x += x_speed;
+    m_y += y_speed;
 }
 
 }

@@ -23,6 +23,7 @@ int main(int argc, char *argv[] )
     while(!quit)
     {
         // Update particles
+        screen.clear();
         swarm.update();
 
         // Draw particles
