@@ -26,6 +26,7 @@ struct Particle
 public:
         Particle();
         ~Particle();
+        void init();
         void update(int interval);
 
 };
