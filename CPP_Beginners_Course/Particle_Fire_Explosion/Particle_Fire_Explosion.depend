@@ -8,7 +8,7 @@
 	<stdlib.h>
 	<time.h>
 
-1603113571 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\screen.h
+1603115081 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\screen.h
 	<iostream>
 	<SDL2/SDL.h>
 
@@ -373,9 +373,10 @@
 	"Particle.h"
 	<stdlib.h>
 
-1603114706 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
+1603115081 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
 	<iostream>
 	<SDL2/SDL.h>
+	"Screen.h"
 
 1603113140 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\swarm.cpp
 	"Swarm.h"

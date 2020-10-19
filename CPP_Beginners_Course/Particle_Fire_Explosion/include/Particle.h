@@ -2,7 +2,7 @@
 #define PARTICLE_H
 #include <iostream>
 #include <SDL2/SDL.h>
-
+#include "Screen.h"
 using namespace std;
 
 namespace spalduing
