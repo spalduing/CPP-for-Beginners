@@ -9,15 +9,15 @@ namespace spalduing
 {
 
 
-class Particle
+struct Particle
 {
 /*
-*   In this case we declare this variables public,
-*   in order to get an easy access to them. It's not
-*   recommended to adopt a programing style because that's
-*   not ideal for the sake of efficiency.
+*   In this case we declare make a struct instead of aclass,
+*   in order to get an easy access to them. It's not recommended
+*   to adopt a programing style because that's not ideal for the
+*   sake of efficiency.
 */
-public:
+
     double m_x;
     double m_y;
 public:

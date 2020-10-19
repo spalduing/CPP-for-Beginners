@@ -4,14 +4,14 @@ namespace spalduing
 {
 
 
-Swarm::Swarm()
+Swarm::Swarm():m_pParticles(new Particle[NPARTICLES])
 {
     //ctor
 }
 
 Swarm::~Swarm()
 {
-    //dtor
+    delete [] m_pParticles;
 }
 
 }
