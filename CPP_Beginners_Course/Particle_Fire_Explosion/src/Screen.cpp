@@ -6,7 +6,7 @@ namespace spalduing
 
 
 Screen::Screen():m_window(NULL),m_renderer(NULL),m_texture(NULL),
-                m_buffer(NULL){}
+                m_buffer(NULL), m_buffer2(NULL){}
 
 Screen::~Screen(){}
 
@@ -50,8 +50,10 @@ bool Screen::init()
     }
 
     m_buffer = new Uint32[SCREEN_WIDTH*SCREEN_HIGH];
+    m_buffer2 = new Uint32[SCREEN_WIDTH*SCREEN_HIGH];
 
     memset(m_buffer, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
+    memset(m_buffer2, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
 
 
 
@@ -86,6 +88,60 @@ void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue)
 void Screen::clear()
 {
     memset(m_buffer, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
+    memset(m_buffer2, 0, SCREEN_WIDTH*SCREEN_HIGH*sizeof(Uint32));
+}
+
+void Screen::boxBlur()
+{
+    //Sway the buffers, so pixel is in m_buffer2 and we are drawing m_buffer
+    Uint32 *pTemp = m_buffer;
+    m_buffer = m_buffer2;
+    m_buffer2 = pTemp;
+
+    for(int y=0; y<SCREEN_HIGH; y++)
+    {
+        for(int x=0; x<SCREEN_WIDTH; x++)
+        {
+            /*
+            *   0 0 0
+            *   0 1 0
+            *   0 0 0
+            */
+
+            int redTotal = 0;
+            int greenTotal = 0;
+            int blueTotal = 0;
+
+            for(int row=-1; row<=1; row++)
+            {
+                for(int col=-1; col<=1; col++)
+                {
+                    int currentX = x + col;
+                    int currentY = y + row;
+
+                    if(currentX >= 0 && currentX < SCREEN_WIDTH
+                       && currentY >= 0 && currentY < SCREEN_HIGH)
+                    {
+                        Uint32 color = m_buffer2[currentY*SCREEN_WIDTH + currentX];
+                        Uint8 red = color >> 24;
+                        Uint8 green = color >> 16;
+                        Uint8 blue = color >> 8;
+
+                        redTotal += red;
+                        greenTotal += green;
+                        blueTotal += blue;
+                    }
+                }
+            }
+
+            Uint8 red = redTotal/9;
+            Uint8 green = greenTotal/9;
+            Uint8 blue = blueTotal/9;
+
+            setPixel(x, y, red, green, blue);
+
+        }
+    }
 }
 
 bool Screen::processEvent(bool quit, SDL_Event &event)
@@ -103,6 +159,7 @@ bool Screen::processEvent(bool quit, SDL_Event &event)
 void Screen::close()
 {
     delete [] m_buffer;
+    delete [] m_buffer2;
     SDL_DestroyRenderer(m_renderer);
     SDL_DestroyTexture(m_texture);
     SDL_DestroyWindow(m_window);
