@@ -23,7 +23,7 @@ int main(int argc, char *argv[] )
     while(!quit)
     {
         // Update particles
-
+        swarm.update();
 
         // Draw particles
         int elapsed = SDL_GetTicks();

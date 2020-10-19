@@ -23,6 +23,7 @@ struct Particle
 public:
         Particle();
         ~Particle();
+        void update();
 
 };
 

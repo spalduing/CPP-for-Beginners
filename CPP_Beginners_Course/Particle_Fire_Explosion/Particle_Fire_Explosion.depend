@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1603067828 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\main.cpp
+1603113156 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\main.cpp
 	<iostream>
 	<math.h>
 	"screen.h"
+	"Swarm.h"
+	"Particle.h"
 	<stdlib.h>
 	<time.h>
 
@@ -367,17 +369,17 @@
 1603069264 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\screen.cpp
 	"Screen.h"
 
-1603067341 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\particle.cpp
+1603113140 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\particle.cpp
 	"Particle.h"
 	<stdlib.h>
 
-1603067590 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
+1603112530 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\particle.h
 	<iostream>
 	<SDL2/SDL.h>
 
-1603068199 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\swarm.cpp
+1603113140 source:c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\src\swarm.cpp
 	"Swarm.h"
 
-1603068721 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\swarm.h
+1603113140 c:\users\usuario\desktop\cpp-for-beginners\cpp_beginners_course\particle_fire_explosion\include\swarm.h
 	"Particle.h"
 
